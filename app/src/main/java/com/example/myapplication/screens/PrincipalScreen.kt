@@ -1,4 +1,4 @@
-package com.example.myapplication.Screens
+package com.example.myapplication.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -10,12 +10,12 @@ import androidx.navigation.NavHostController
 import com.example.myapplication.Composables.BottomBar
 
 @Composable
-fun SegundaScreen(navController: NavHostController) {
+fun PrincipalScreen(navController: NavHostController) {
     Scaffold(
         bottomBar = {BottomBar(navController)}
     ) { paddingValues ->
         Column(modifier = Modifier.padding(paddingValues)){
-            Text("Segunda Screen")
+            Text("Hola, esta es la pantalla principal")
         }
     }
 }
