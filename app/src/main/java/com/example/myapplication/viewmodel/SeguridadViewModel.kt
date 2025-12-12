@@ -116,7 +116,7 @@ class SeguridadViewModel : ViewModel() {
     // --- FUNCIÓN DE LOGS (Historial) ---
 
     private fun registrarLog(mensaje: String) {
-        // push() genera una clave única basada en el tiempo (ej: -Nj7x...)
+        // push() genera una clave única basada en el tiempo
         // Esto permite crear una lista en lugar de sobrescribir el dato
         val key = refLogs.push().key
 
